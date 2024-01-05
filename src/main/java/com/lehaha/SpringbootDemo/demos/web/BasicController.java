@@ -62,6 +62,7 @@ public class BasicController {
     public void parseUser(@RequestParam(name = "name", defaultValue = "unknown user") String name
             , @RequestParam(name = "age", defaultValue = "12") Integer age, User user) {
         user.setName("zhangsan");
+        System.out.println(2222);
         user.setAge(18);
     }
 }
